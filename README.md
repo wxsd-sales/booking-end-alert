@@ -1,6 +1,6 @@
 # Booking End Alert Macro
 
-This is a simple Webex Device macro which displays an alert when a booking is about to end
+This is a simple Webex Device macro which displays an alert when specific bookings are about tot end.
 
 ### How it works
 
