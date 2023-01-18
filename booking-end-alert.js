@@ -50,8 +50,9 @@ const config = {
       'Please book additional time or exit the room. Thank you'
     ]
   },
-  organizer: 'PlaceOS User', //The organizer full name
+  organizer: 'William Mills', //The organizer full name
   seconds: [    // Booking Ending Trigger alerts at 600/300/... second intervals, check which you want to monitor
+    //900,
     600,
     300
     //60
@@ -69,6 +70,7 @@ async function processTimeRemaining(event) {
     return;
   }
   const booking = await getBooking(event.Id)
+
   if (booking == null) {
     console.log(`Booking [${event.Id}] dooesn't contain correct organizer, ignoring event`)
     return;
@@ -111,7 +113,7 @@ function checkOrganizer(booking) {
 function getBooking(id) {
   return xapi.Command.Bookings.Get({ Id: id })
     .then(result => {
-      if (checkOrganizer(result)) return result;
+      if (checkOrganizer(result.Booking)) return result.Booking;
       return null;
     })
     .catch(e => {
