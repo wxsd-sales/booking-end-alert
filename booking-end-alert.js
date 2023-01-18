@@ -50,11 +50,13 @@ const config = {
       'Please book additional time or exit the room. Thank you'
     ]
   },
-  organizer: 'William Mills', //The organizer full name
+  organizer: 'PlaceOS User', //The organizer full name
   seconds: [    // Booking Ending Trigger alerts at 600/300/... second intervals, check which you want to monitor
     //900,
     600,
-    300
+    300,
+    //240,
+    //180,
     //60
   ]
 }
@@ -76,7 +78,7 @@ async function processTimeRemaining(event) {
     return;
   }
   console.log('Constructing message')
-  let alert = config.endingAlert;
+  let alert = {...config.endingAlert};
   const minutes = event.Seconds / 60;
   alert.Text = `${alert.Text[0]} ${minutes} minute${minutes == 1 ? '' : 's'}. ${alert.Text[1]}`;
   displayAlert(alert);
@@ -90,7 +92,7 @@ async function processEnded(event) {
     return;
   }
   console.log('Constructing message')
-  let alert = config.endedAlert;
+  let alert = {...config.endedAlert};
   alert.Text = `${alert.Text[0]}. ${alert.Text[1]}`;
   displayAlert(alert);
 }
