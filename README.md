@@ -1,11 +1,7 @@
 # Booking End Alert Macro
-Welcome to our WXSD DEMO Repo! <!-- Keep this here --> 
 
 This is a simple Webex Device macro which displays an alert when specific bookings are about to end.
 
-<!-- Keep the following here -->  
- *_Everything included is for demo and Proof of Concept purposes only. Your use of the site is solely at your own risk. This site may contain links to third party content, which we do not warrant, endorse, or assume liability for. These demos are for Cisco Webex usecases, but are not Official Cisco Webex Branded demos._
- 
 ## How it works
 
 The macro monitors booking end events on the Webex Device and can alert up to 10 minutes before a booking is about to end.
@@ -32,7 +28,21 @@ Validated Hardware:
 * Room Kit
 
 This macro should work on other Webex Devices but has not been validated at this time.
+   
+## Demo
 
-## Support
+*For more demos & PoCs like this, check out our [Webex Labs site](https://collabtoolbox.cisco.com/webex-labs).
 
-Please reach out to the WXSD team at [wxsd@external.cisco.com](mailto:wxsd@external.cisco.com?subject=booking-end-alert-macro)
+
+## License
+
+All contents are licensed under the MIT license. Please see [license](LICENSE) for details.
+
+
+## Disclaimer
+
+Everything included is for demo and Proof of Concept purposes only. Use of the site is solely at your own risk. This site may contain links to third party content, which we do not warrant, endorse, or assume liability for. These demos are for Cisco Webex use cases, but are not Official Cisco Webex Branded demos.
+
+
+## Questions
+Please contact the WXSD team at [wxsd@external.cisco.com](mailto:wxsd@external.cisco.com?subject=booking-end-alert-macro) for questions. Or, if you're a Cisco internal employee, reach out to us on the Webex App via our bot (globalexpert@webex.bot). In the "Engagement Type" field, choose the "API/SDK Proof of Concept Integration Development" option to make sure you reach our team. 
