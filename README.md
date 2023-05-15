@@ -9,7 +9,7 @@ The macro monitors booking end events on the Webex Device and can alert up to 10
 ## Requirements
 
 1. RoomOS/CE 9.6.x or above Webex Device.
-2. Web admin access to the device to uplaod the macro.
+2. Web admin access to the device to upload the macro.
 3. Network connectivity for your Webex Device to make HTTP POSTs directly with your telemetry server.
 
 ## Setup
